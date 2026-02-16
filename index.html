@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaka Pharma | Trusted Medicine Shop in Dhaka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🏥 Dhaka Pharma</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" id="hamburger">☰</div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search medicines...">
+            </div>
+            <div class="header-actions">
+                <button class="prescription-btn" id="prescriptionBtn">📄 Upload Prescription</button>
+                <a href="tel:+8801758742415" class="call-btn">📞 Call to Order</a>
+                <!-- WhatsApp Integration -->
+                <a href="https://wa.me/8801758742415" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">💬 WhatsApp</a>
+                <div class="cart-icon" id="cartIcon">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+            <input type="file" id="fileInput" accept="image/*,application/pdf" style="display: none;">
+        </div>
+
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <div class="nav-mobile" id="navMobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+
+        <div class="file-name" id="fileName"></div>
+    </header>
+
+    <!-- Hero Slider (id=home for anchor) -->
+    <section class="hero" id="home">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h2>Fastest Medicine Delivery</h2>
+                        <p>Get your medicines in 30 mins • Dhaka only</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>20% Off on All Vitamin Products</h2>
+                        <p>Boost your immunity with authentic brands</p>
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Free Prescription Consultatiion</h2>
+                        <p>Upload & we’ll reach you within hours</p>
+                        <button class="shop-now">Upload Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev" id="prevSlide">❮</button>
+            <button class="slider-btn next" id="nextSlide">❯</button>
+            <div class="dots" id="dots"></div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filter-section" id="products">
+        <div class="filter-buttons" id="filterButtons">
+            <!-- JS will populate -->
+        </div>
+    </section>
+
+    <!-- Products Container (categories & products) -->
+    <section class="products-section">
+        <div class="products-container" id="productsContainer">
+            <!-- dynamically rendered by JS -->
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚚</div>
+                <h3>24/7 Delivery</h3>
+                <p>Around the clock medicine delivery in Dhaka</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💊</div>
+                <h3>Authentic Medicines</h3>
+                <p>100% genuine products from licensed suppliers</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👨‍⚕️</div>
+                <h3>Free Prescription Consultation</h3>
+                <p>Online support from trusted physicians</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛵</div>
+                <h3>Fast Home Delivery</h3>
+                <p>Free delivery for orders over 500 BDT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+        <h2>About Dhaka Pharma</h2>
+        <p>Dhaka Pharma is a trusted, locally-owned pharmacy serving the heart of Dhaka since 2010. We combine modern healthcare with traditional trust, ensuring every medicine reaches you with authenticity and care. Our team of licensed pharmacists is dedicated to your well‑being. <strong>Your health, our priority.</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Dhaka Pharma — Premium Care, Delivered.</p>
+        <p>Designed & Developed by <a href="https://ventureit.tech/" target="_blank">Venture IT</a></p>
+    </footer>
+
+    <!-- Shopping Cart Panel -->
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">0 BDT</span>
+        </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
