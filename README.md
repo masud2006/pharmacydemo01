@@ -5,8 +5,7 @@ A clean, professional, and conversion-focused pharmacy website demo designed to 
 This demo showcases how a reliable and modern pharmacy website should look, feel, and convert visitors into loyal customers.
 
 🔗 Live Demo
-👉 Website Preview:
-https://dhakapharmademo.vercel.app/
+👉 Website Preview: https://pharmacydemo01.vercel.app/
 
 Viewing the live demo gives pharmacy owners a clear understanding of how their digital store will appear after full customization.
 
